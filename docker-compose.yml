@@ -20,6 +20,8 @@ services:
         soft: -1
         hard: -1
     mem_limit: 1g
+    volumes:
+      - ./data1:/usr/share/elasticsearch/data
     ports:
       - "9200:9200"
       - "9300:9300"
@@ -37,6 +39,8 @@ services:
         soft: -1
         hard: -1
     mem_limit: 1g
+    volumes:
+      - ./data2:/usr/share/elasticsearch/data
     ports:
       - "9201:9200"
       - "9301:9300"
